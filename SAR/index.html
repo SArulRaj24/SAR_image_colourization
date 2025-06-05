@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+            <h2>SAR Image Colourization</h2>
+        </div>
+        <div id="dropArea" class="drop-area">
+            <p>Drag & Drop an Image Here or Click to Upload</p>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+
+        <div class="image-container">
+            <h3>Uploaded Image</h3>
+            <img id="displayImage" alt="Uploaded Image" style="display:none;">
+        </div>
+
+        <div class="image-container" id="processedImageContainer" style="display:none;">
+            <h3>Processed Image</h3>
+            <img id="processedImage" alt="Processed Image" style="display:none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
